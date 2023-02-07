@@ -34,5 +34,5 @@ def show_item_body(item: Item):
     return {"item" : item}
 
 @app.get("/items/combine/{item_id}")
-def combine_all_params(item_id:str,item_name:str,item_detail:ItemDetail):
+def combine_all_params(item_id:str,item_name:str,item_detail:Item):
     return {"item_id":item_id,"item_name":item_name,"item_detail":item_detail}
